@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeensClub</title>
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+<div class="main-container">
+  <h1 class="title">TeensClub</h1>
+  <button id="openLogin" class="main-btn">Login</button>
+  <button id="openSignup" class="main-btn">Sign Up</button>
+</div>
+
+<!-- LOGIN POPUP -->
+<div id="loginPopup" class="popup hidden">
+  <div class="popup-box">
+      <h2>Login</h2>
+      <input id="loginEmail" type="text" placeholder="Username or Email">
+      <input id="loginPassword" type="password" placeholder="Password">
+      <button id="loginBtn">Login</button>
+      <button id="closeLogin" class="close-btn">Close</button>
+  </div>
+</div>
+
+<!-- SIGNUP POPUP -->
+<div id="signupPopup" class="popup hidden">
+  <div class="popup-box">
+      <h2>Sign Up</h2>
+      <input id="signupUsername" type="text" placeholder="Username">
+      <input id="signupEmail" type="email" placeholder="Email">
+      <input id="signupPassword" type="password" placeholder="Password">
+      <select id="signupGender">
+          <option value="">Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+      </select>
+      <select id="signupAge">
+          <option value="">Age</option>
+      </select>
+      <button id="signupBtn">Create Account</button>
+      <button id="closeSignup" class="close-btn">Close</button>
+  </div>
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="auth.js"></script>
+
+</body>
+                                          </html>
